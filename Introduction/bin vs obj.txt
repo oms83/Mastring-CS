@@ -1,0 +1,2 @@
+﻿derleme zamaninda porjenin tum pracalari obj klasorunde saklanir
+calisma zamaninda ise bin kalsorunde
