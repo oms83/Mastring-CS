@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arrays\clsArrays.cs" />
-    <Compile Include="Casting\clsCasting.cs" />
+    <Compile Include="Casting Type Conversion\clsCasting.cs" />
     <Compile Include="Expressions\clsExpressions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
