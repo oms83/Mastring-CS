@@ -10,6 +10,8 @@ namespace Introduction
     {
         static void Main(string[] args)
         {
+            OOP.OOP.run();
+            Console.ReadKey();
         }
     }
 }

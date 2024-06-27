@@ -46,6 +46,7 @@
     <Compile Include="Arrays\clsArrays.cs" />
     <Compile Include="Casting Type Conversion\clsCasting.cs" />
     <Compile Include="Expressions\clsExpressions.cs" />
+    <Compile Include="OOP\clsEmployee.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Variables\clsVariables.cs" />
