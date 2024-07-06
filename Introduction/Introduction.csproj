@@ -48,6 +48,7 @@
     <Compile Include="Expressions\clsExpressions.cs" />
     <Compile Include="OOP\clsDate.cs" />
     <Compile Include="OOP\clsEmployee.cs" />
+    <Compile Include="OOP\clsIndexers.cs" />
     <Compile Include="OOP\clsProperities.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -10,7 +10,7 @@ namespace Introduction
     {
         static void Main(string[] args)
         {
-            OOP.clsConstructor.run();
+            OOP.clsIndexers.run();
             Console.ReadKey();
         }
     }
