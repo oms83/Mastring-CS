@@ -133,6 +133,9 @@ namespace Introduction.Delegation
             rect += obj.Perimeter;
 
             rect(10, 20);
+
+            rect -= obj.Area;
+            rect(10, 20);
         }
     }
 }
