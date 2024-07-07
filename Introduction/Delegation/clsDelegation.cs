@@ -100,6 +100,9 @@ namespace Introduction.Delegation
             clsReport.Filter(lstEmployees, EmployeesSalariesAreGreaterThan20000, "\nEmployee salaries are greater than 20,000\n");
             clsReport.Filter(lstEmployees, EmployeesNamesStartWithO, "\n\nEmployees Names Start With \'O\'\n");
 
+            clsReport.Filter(lstEmployees, delegate(clsEmpoyees emp) { return emp.Salary >= 20000m; }, "\nEmployee salaries are greater than 20,000\n");
+            clsReport.Filter(lstEmployees, delegate (clsEmpoyees emp) { return emp.FirstName.ToLowerInvariant().StartsWith("o"); }, "\n\nEmployees Names Start With \'O\'\n");
+
 
         }
     }
