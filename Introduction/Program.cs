@@ -10,7 +10,7 @@ namespace Introduction
     {
         static void Main(string[] args)
         {
-            Delegation.clsDelegation.run();
+            OOP.Events.clsEvents.run();
             Console.ReadKey();
         }
     }
