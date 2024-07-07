@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -28,6 +29,7 @@ namespace Introduction.Delegation
     }
     public class clsReport
     {
+        public delegate bool employeesFilteringCondition(clsEmpoyees employee);
         public static void EmployeesSalariesAreGreaterThan20000(List<clsEmpoyees> empoyees, string message)
         {
             Console.WriteLine(message);
@@ -47,6 +49,19 @@ namespace Introduction.Delegation
                 if (empoyee.FirstName.ToLowerInvariant().StartsWith("o"))
                 {
                     Console.WriteLine($"Full Name: {empoyee.FirstName} {empoyee.LastName}   Age: {empoyee.Age}   Salary: {empoyee.Salary}");
+                }
+            }
+        }
+
+        public static void Filter(List<clsEmpoyees> employees, employeesFilteringCondition filter, string message)
+        {
+            Console.WriteLine(message);
+
+            foreach (clsEmpoyees employee in employees)
+            {
+                if (filter(employee))
+                {
+                    Console.WriteLine($"Full Name: {employee.FirstName} {employee.LastName}   Age: {employee.Age}   Salary: {employee.Salary}");
                 }
             }
         }
@@ -72,6 +87,8 @@ namespace Introduction.Delegation
 
     public static class clsDelegation
     {
+        public static bool EmployeesSalariesAreGreaterThan20000(clsEmpoyees emp) => emp.Salary >= 20000m;
+        public static bool EmployeesNamesStartWithO(clsEmpoyees emp) => emp.FirstName.ToLowerInvariant().StartsWith("o");
         public static void run()
         {
 
@@ -79,6 +96,11 @@ namespace Introduction.Delegation
 
             clsReport.EmployeesSalariesAreGreaterThan20000(lstEmployees, "\nEmployee salaries are greater than 20,000\n");
             clsReport.EmployeesNamesStartWithO(lstEmployees, "\n\nEmployees Names Start With \'O\'\n");
+
+            clsReport.Filter(lstEmployees, EmployeesSalariesAreGreaterThan20000, "\nEmployee salaries are greater than 20,000\n");
+            clsReport.Filter(lstEmployees, EmployeesNamesStartWithO, "\n\nEmployees Names Start With \'O\'\n");
+
+
         }
     }
 }
