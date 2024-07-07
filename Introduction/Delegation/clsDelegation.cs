@@ -85,8 +85,24 @@ namespace Introduction.Delegation
 
     }
 
+    public class Rectangle
+    {
+        public void Area(decimal height, decimal width)
+        {
+            decimal area = height * width;
+            Console.WriteLine($"Area: {area}");
+        }
+
+        public void Perimeter(decimal height, decimal width)
+        {
+            decimal perimeter = 2 * (height + width);
+            Console.WriteLine($"perimeter: {perimeter}");
+        }
+    }
+
     public static class clsDelegation
     {
+        public delegate void DelRectangle(decimal height, decimal width);
         public static bool EmployeesSalariesAreGreaterThan20000(clsEmpoyees emp) => emp.Salary >= 20000m;
         public static bool EmployeesNamesStartWithO(clsEmpoyees emp) => emp.FirstName.ToLowerInvariant().StartsWith("o");
         public static void run()
@@ -110,6 +126,13 @@ namespace Introduction.Delegation
             clsReport.Filter(lstEmployees, emp => emp.FirstName.ToLowerInvariant().StartsWith("o"), "\n\nEmployees Names Start With \'O\'\n");
 
 
+            Rectangle obj = new Rectangle();
+            // mutlicast delegate
+            DelRectangle rect;
+            rect = obj.Area;
+            rect += obj.Perimeter;
+
+            rect(10, 20);
         }
     }
 }
