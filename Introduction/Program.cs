@@ -10,7 +10,7 @@ namespace Introduction
     {
         static void Main(string[] args)
         {
-            OOP.Operating_Overloading.clsOperatorOverLoading.run();
+            OOP.Finalizer.clsFinalizer.run();
             Console.ReadKey();
         }
     }
