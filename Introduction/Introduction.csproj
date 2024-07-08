@@ -52,6 +52,7 @@
     <Compile Include="OOP\clsIndexers.cs" />
     <Compile Include="OOP\clsProperities.cs" />
     <Compile Include="OOP\Events\clsEvents.cs" />
+    <Compile Include="OOP\Operator Overloading\clsOperatorOverLoading.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Variables\clsVariables.cs" />
