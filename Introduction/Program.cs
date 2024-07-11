@@ -10,7 +10,7 @@ namespace Introduction
     {
         static void Main(string[] args)
         {
-            Struct.clsStruct.run();
+            Enums.clsEnums.run();
             Console.ReadKey();
         }
     }

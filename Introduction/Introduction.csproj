@@ -47,6 +47,7 @@
     <Compile Include="Casting Type Conversion\clsCasting.cs" />
     <Compile Include="Debugging\clsDebugging.cs" />
     <Compile Include="Delegation\clsDelegation.cs" />
+    <Compile Include="Enums\clsEnums.cs" />
     <Compile Include="Expressions\clsExpressions.cs" />
     <Compile Include="OOP\clsDate.cs" />
     <Compile Include="OOP\clsEmployee.cs" />
