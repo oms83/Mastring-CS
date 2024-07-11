@@ -37,6 +37,17 @@ namespace Introduction.Struct
             this.name = name;
         }
 
+        public struct stWithNew
+        {
+            public int id;
+            public void show() => Console.WriteLine("st with new");
+        }
+        public struct stWithoutNew
+        {
+            public int id;
+            public void show() => Console.WriteLine("st without new");
+        }
+
         public static void run()
         {
             // date time is a readonly struct
@@ -55,6 +66,18 @@ namespace Introduction.Struct
             dateTime.AddHours(10);
             Console.WriteLine(DT);
             Console.WriteLine(dateTime);
+
+            //-----------------------------
+
+            stWithNew instanse1 = new stWithNew();
+            stWithoutNew instance2;
+            
+            // we must be initialized all field in struct when we not use the new keyword
+            instance2.id = 1;
+            instance2.show();
+
+
+
         }
     }
 }
