@@ -55,6 +55,7 @@
     <Compile Include="OOP\clsProperities.cs" />
     <Compile Include="OOP\Events\clsEvents.cs" />
     <Compile Include="OOP\Finalizer\clsFinalizer.cs" />
+    <Compile Include="OOP\Inheritance\clsInheritance1.cs" />
     <Compile Include="OOP\Operator Overloading\clsOperatorOverLoading.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
