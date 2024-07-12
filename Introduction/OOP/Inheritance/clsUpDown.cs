@@ -34,7 +34,7 @@ namespace Introduction.OOP.Inheritance
             Console.WriteLine("flying");
         }
     }
-    public class clsInheritance1
+    public class clsUpDown
     {
         public static void run()
         {
