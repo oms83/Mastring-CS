@@ -10,7 +10,7 @@ namespace Introduction
     {
         static void Main(string[] args)
         {
-            OOP.Inheritance.clsAbstract.run();
+            OOP.Inheritance.OBJ.clsObject.run();
             Console.ReadKey();
         }
     }

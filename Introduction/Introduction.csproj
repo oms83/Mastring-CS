@@ -56,6 +56,7 @@
     <Compile Include="OOP\Events\clsEvents.cs" />
     <Compile Include="OOP\Finalizer\clsFinalizer.cs" />
     <Compile Include="OOP\Inheritance\clsAbstract.cs" />
+    <Compile Include="OOP\Inheritance\clsObject.cs" />
     <Compile Include="OOP\Inheritance\clsUpDown.cs" />
     <Compile Include="OOP\Operator Overloading\clsOperatorOverLoading.cs" />
     <Compile Include="Program.cs" />
