@@ -41,7 +41,12 @@ namespace Introduction.OOP.Inheritance
 
             public override string ToString()
             {
-                return $@"ID: {ID}
+                string type = this.GetType().ToString().Replace("Introduction.OOP.Inheritance.Practices.cls", "");
+                return $@"
+============
+{type}
+============
+ID: {ID}
 Name: {Name}
 Wage: {Wage}
 Logged Hours: {LoggedHours}

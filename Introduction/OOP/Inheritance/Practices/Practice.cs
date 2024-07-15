@@ -33,7 +33,6 @@ namespace Introduction.OOP.Inheritance
                 Console.WriteLine(mn.ToString());
 
 
-
                 Console.WriteLine("\n========================================================\n");
 
                 clsManager mng = new clsManager(1, "Omer MEMES", 180, (decimal)clsEmployee.enWagePerHour.Manager);
