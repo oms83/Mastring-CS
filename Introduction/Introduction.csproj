@@ -56,8 +56,14 @@
     <Compile Include="OOP\Events\clsEvents.cs" />
     <Compile Include="OOP\Finalizer\clsFinalizer.cs" />
     <Compile Include="OOP\Inheritance\clsAbstract.cs" />
+    <Compile Include="OOP\Inheritance\Practices\clsDeveloper.cs" />
+    <Compile Include="OOP\Inheritance\Practices\clsEmployee.cs" />
     <Compile Include="OOP\Inheritance\clsObject.cs" />
     <Compile Include="OOP\Inheritance\clsUpDown.cs" />
+    <Compile Include="OOP\Inheritance\Practices\clsMaintenance.cs" />
+    <Compile Include="OOP\Inheritance\Practices\clsManager.cs" />
+    <Compile Include="OOP\Inheritance\Practices\clsSales.cs" />
+    <Compile Include="OOP\Inheritance\Practices\Practice.cs" />
     <Compile Include="OOP\Operator Overloading\clsOperatorOverLoading.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
