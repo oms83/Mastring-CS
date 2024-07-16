@@ -10,7 +10,7 @@ namespace Introduction
     {
         static void Main(string[] args)
         {
-            Delegation.Generic_Delegate.Example1.run();
+            Delegation.Generic_Delegate.Example2.run();
             Console.ReadKey();
         }
     }

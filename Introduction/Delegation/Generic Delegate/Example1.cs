@@ -9,6 +9,7 @@ namespace Introduction.Delegation.Generic_Delegate
 {
     public class Example1
     {
+        public delegate bool predicate<in T>(T number); // == public predicate<int>Filter;
         public delegate bool delFilter(int number);
         public delegate T1 delWhere<out T1, in T2>(T2 number);
         public static void Filter1(int[] arr, delFilter filter)

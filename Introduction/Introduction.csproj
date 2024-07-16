@@ -66,6 +66,7 @@
     <Compile Include="Debugging\clsDebugging.cs" />
     <Compile Include="Delegation\clsDelegation.cs" />
     <Compile Include="Delegation\Generic Delegate\Example1.cs" />
+    <Compile Include="Delegation\Generic Delegate\Example2.cs" />
     <Compile Include="Enums\clsEnums.cs" />
     <Compile Include="Expressions\clsExpressions.cs" />
     <Compile Include="Generics\GenericClass.cs" />
