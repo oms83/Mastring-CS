@@ -49,6 +49,8 @@
     <Compile Include="Delegation\clsDelegation.cs" />
     <Compile Include="Enums\clsEnums.cs" />
     <Compile Include="Expressions\clsExpressions.cs" />
+    <Compile Include="Generics\GenericMethod.cs" />
+    <Compile Include="Generics\Overloading_intro.cs" />
     <Compile Include="OOP\clsDate.cs" />
     <Compile Include="OOP\clsEmployee.cs" />
     <Compile Include="OOP\clsIndexers.cs" />

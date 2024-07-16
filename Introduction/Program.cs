@@ -10,7 +10,7 @@ namespace Introduction
     {
         static void Main(string[] args)
         {
-            OOP.Interface.Tight_vs_Loos.Loos.LoosCoupling.run();
+            Generics.GenericMethod.run();
             Console.ReadKey();
         }
     }
