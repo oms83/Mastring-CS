@@ -64,6 +64,10 @@
     <Compile Include="OOP\Inheritance\Practices\clsManager.cs" />
     <Compile Include="OOP\Inheritance\Practices\clsSales.cs" />
     <Compile Include="OOP\Inheritance\Practices\Practice.cs" />
+    <Compile Include="OOP\Interface\ExplicitInterface.cs" />
+    <Compile Include="OOP\Interface\interfaceExample.cs" />
+    <Compile Include="OOP\Interface\Tight vs Loos\LoosCoupling.cs" />
+    <Compile Include="OOP\Interface\Tight vs Loos\TightCoupling.cs" />
     <Compile Include="OOP\Operator Overloading\clsOperatorOverLoading.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
