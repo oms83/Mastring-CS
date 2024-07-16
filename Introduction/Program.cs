@@ -10,7 +10,7 @@ namespace Introduction
     {
         static void Main(string[] args)
         {
-            Generics.GenericClassConstraint.run();
+            Delegation.Generic_Delegate.Example1.run();
             Console.ReadKey();
         }
     }
