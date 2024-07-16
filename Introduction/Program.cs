@@ -10,7 +10,7 @@ namespace Introduction
     {
         static void Main(string[] args)
         {
-            Generics.GenericMethod.run();
+            Generics.GenericClass.run();
             Console.ReadKey();
         }
     }
