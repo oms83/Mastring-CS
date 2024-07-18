@@ -10,7 +10,7 @@ namespace Introduction
     {
         static void Main(string[] args)
         {
-            Exceptions.Example1.run();
+            Exceptions.Example2.run();
             Console.ReadKey();
         }
     }
