@@ -10,7 +10,7 @@ namespace Introduction
     {
         static void Main(string[] args)
         {
-            Enumerators.Enumerator_IEnumerable.run();
+            Enumerators.Enumerators2.run();
             Console.ReadKey();
         }
     }

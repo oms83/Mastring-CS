@@ -67,6 +67,7 @@
     <Compile Include="Delegation\clsDelegation.cs" />
     <Compile Include="Delegation\Generic Delegate\Example1.cs" />
     <Compile Include="Delegation\Generic Delegate\Example2.cs" />
+    <Compile Include="Enumerators\Enumerators2.cs" />
     <Compile Include="Enumerators\Enumerator_IEnumerable.cs" />
     <Compile Include="Enumerators\Equals_GetHash.cs" />
     <Compile Include="Enums\clsEnums.cs" />
