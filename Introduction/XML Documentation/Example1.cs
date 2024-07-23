@@ -6,10 +6,64 @@ using System.Threading.Tasks;
 
 namespace Introduction.XML_Documentation
 {
+   /// <summary>
+   /// The main generate class
+   /// </summary>
+   /// <remarks>
+   /// This class can generate employee Id's and random password
+   /// </remarks>
     public class Generator
     {
+        /// <value>value of last id sequance</value>
         public static int LastIdSequence { get; private set; } = 1;
 
+        /// <summary>
+        /// This method return employee id contains the name, surname, hire data and last id sequence 
+        /// Generate employee id processing by <paramref name="FirstName"/>, <paramref name="LastName"/>, <paramref name="HireDate"/>
+        /// <list type="bullet">
+        /// <item>
+        /// <term>II</term>
+        /// <description>Employee initials (First lette if <paramref name="FirstName"/>) and (First name of <paramref name="LastName"/>)</description>
+        /// </item>
+        /// <item>
+        /// <term>HD</term>
+        /// <description>Employee Hire Data <paramref name="HireDate"/></description>
+        /// </item>
+        /// <item>BB</item>
+        /// <description></description>
+        /// <item>
+        /// <term>CC</term>
+        /// <description>sequence (1,99)</description>
+        /// </item>
+        /// </list>
+        /// <list type="table">
+        /// <item>
+        /// <term>CC</term>
+        /// <description>ds</description>
+        /// </item>
+        /// <item>
+        /// <term>CC</term>
+        /// <description>ds</description>
+        /// </item>
+        /// <item>
+        /// <term>CC</term>
+        /// <description>ds</description>
+        /// <description>ds</description>
+        /// </item>
+        /// <example>
+        /// <code>var id = Generator.GenerateId("Omer", "MEMES", new DateTime(2000, 08,03))</code>
+        /// </example>
+        /// </list>
+        /// <exception cref="System.InvalidOperationException">Thrown when <paramref name="FirstName"/> is null </exception>
+        /// <exception cref="System.InvalidOperationException">Thrown when <paramref name="LastName"/> is null </exception>
+        /// <exception cref="System.InvalidOperationException">Thrown when <paramref name="HireDate"/> in the past </exception>
+        ///
+        /// </summary>
+        /// <param name="FirstName">employee firstname</param>
+        /// <param name="LastName">employee lastname</param>
+        /// <param name="HireDate">employee hire date</param>
+        /// <returns></returns>
+        /// <exception cref="InvalidOperationException"></exception>
         public static string GenerateId(string FirstName, string LastName, DateTime? HireDate)
         {
             if (FirstName is null)
