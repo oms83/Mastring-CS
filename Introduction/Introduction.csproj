@@ -82,6 +82,7 @@
     <Compile Include="Exceptions\InvalidAddressException.cs" />
     <Compile Include="Expressions\clsExpressions.cs" />
     <Compile Include="Extension Method\Example1.cs" />
+    <Compile Include="Extension Method\Example2.cs" />
     <Compile Include="Generics\GenericClass.cs" />
     <Compile Include="Generics\GenericClassConstraint.cs" />
     <Compile Include="Generics\GenericMethod.cs" />

@@ -10,7 +10,7 @@ namespace Introduction
     {
         static void Main(string[] args)
         {
-            Extension_Method.Example1.run();
+            Extension_Method.Example2.run();
             Console.ReadKey();
         }
     }
