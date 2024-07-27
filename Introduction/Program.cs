@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,7 +12,10 @@ namespace Introduction
     {
         static void Main(string[] args)
         {
-            Extension_Method.Example2.run();
+
+
+            Assemblies.Example2.run();
+
             Console.ReadKey();
         }
     }
