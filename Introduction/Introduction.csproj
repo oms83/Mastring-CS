@@ -111,6 +111,8 @@
     <Compile Include="OOP\Operator Overloading\clsOperatorOverLoading.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\ActivatorClass.cs" />
+    <Compile Include="Reflection\Example1.cs" />
     <Compile Include="Struct\clsStruct.cs" />
     <Compile Include="Variables\clsVariables.cs" />
     <Compile Include="XML Documentation\Example1.cs" />

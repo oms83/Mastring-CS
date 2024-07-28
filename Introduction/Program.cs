@@ -14,7 +14,7 @@ namespace Introduction
         {
 
 
-            Assemblies.Example2.run();
+            Reflection.ActivatorClass.run2();
 
             Console.ReadKey();
         }
