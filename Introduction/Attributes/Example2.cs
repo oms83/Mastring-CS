@@ -29,12 +29,12 @@ namespace Introduction.Attributes
             return value <= this.Max && value >= this.Min;
         }
     }
-    public class Error
+    public class Errorss
     {
         private string field;
         private string details;
 
-        public Error(string field, string details)
+        public Errorss(string field, string details)
         {
             this.field = field;
             this.details = details;
@@ -93,7 +93,7 @@ namespace Introduction.Attributes
                 new Player("yusuf", 24, 20, 1020, 20, 3),
                 new Player("osman", 14, 20, 900, 50, 1)
             };
-            var errors = new List<Error>();
+            var errors = new List<Errorss>();
 
             foreach (Player player in players)
             {
@@ -112,7 +112,7 @@ namespace Introduction.Attributes
 
                         if (!skillAttribute.IsValid(value))
                         {
-                            errors.Add(new Error(property.Name, $"{player.Name} Invalid value Accepted is  {skillAttribute.Min} - {skillAttribute.Max}"));
+                            errors.Add(new Errorss(property.Name, $"{player.Name} Invalid value Accepted is  {skillAttribute.Min} - {skillAttribute.Max}"));
                         }
                     }
                 }
