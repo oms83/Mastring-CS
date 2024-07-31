@@ -66,6 +66,7 @@
     <Compile Include="Arrays\clsArrays.cs" />
     <Compile Include="Assemblies\Example1.cs" />
     <Compile Include="Assemblies\Example2.cs" />
+    <Compile Include="Attributes\Example1.cs" />
     <Compile Include="Casting Type Conversion\clsCasting.cs" />
     <Compile Include="Debugging\clsDebugging.cs" />
     <Compile Include="Delegation\clsDelegation.cs" />
