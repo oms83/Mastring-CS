@@ -14,7 +14,7 @@ namespace Introduction
         {
 
 
-            Reflection.Example2.run();
+            Reflection.Example2.run2();
 
             Console.ReadKey();
         }
