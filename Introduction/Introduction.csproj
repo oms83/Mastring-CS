@@ -114,6 +114,7 @@
     <Compile Include="Reflection\ActivatorClass.cs" />
     <Compile Include="Reflection\Example1.cs" />
     <Compile Include="Reflection\Example2.cs" />
+    <Compile Include="Reflection\Example3.cs" />
     <Compile Include="Struct\clsStruct.cs" />
     <Compile Include="Variables\clsVariables.cs" />
     <Compile Include="XML Documentation\Example1.cs" />
