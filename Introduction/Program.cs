@@ -14,7 +14,7 @@ namespace Introduction
         {
 
 
-            Collections.Stack_and_Queue.Example1.run();
+            Collections.Stack_and_Queue.Example2.run();
 
             Console.ReadKey();
         }
