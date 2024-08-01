@@ -73,6 +73,7 @@
     <Compile Include="Casting Type Conversion\clsCasting.cs" />
     <Compile Include="Collections\Dictionaries\Example1.cs" />
     <Compile Include="Collections\Dictionaries\Example2.cs" />
+    <Compile Include="Collections\Linkedlist Hashset SortedSet\Example1.cs" />
     <Compile Include="Collections\Lists\Example1.cs" />
     <Compile Include="Collections\Stack and Queue\Example1.cs" />
     <Compile Include="Collections\Stack and Queue\Example2.cs" />
