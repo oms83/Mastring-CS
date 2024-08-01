@@ -71,6 +71,10 @@
     <Compile Include="Attributes\Example2.cs" />
     <Compile Include="Attributes\ReelExample.cs" />
     <Compile Include="Casting Type Conversion\clsCasting.cs" />
+    <Compile Include="Collections\Dictionaries\Example1.cs" />
+    <Compile Include="Collections\Dictionaries\Example2.cs" />
+    <Compile Include="Collections\Lists\Example1.cs" />
+    <Compile Include="Collections\Stack and Queue\Example1.cs" />
     <Compile Include="Debugging\clsDebugging.cs" />
     <Compile Include="Delegation\clsDelegation.cs" />
     <Compile Include="Delegation\Generic Delegate\Example1.cs" />
