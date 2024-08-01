@@ -7,15 +7,33 @@ using System.Threading.Tasks;
 namespace Introduction.Collections.Linkedlist_Hashset_SortedSet
 {
     /*
-        linkedlist & hashset & sortedset
+        linkedlist
         - fast remove/retrieval
         - kept in memory after processing
         - sequentail access
 
+        hashset & sortedset
+        - fast remove/retrieval
+        - kept in memory after processing
+        - Random access
+        - Contiguous memory
+        
+        hashset
+            - hash based lookups الفهرسة
+            - stores key only يخزن مفاتيح فقط
+            - no duplication لا تكرار
+            - no indexing لا فهرسة
+        
+        sortedset
+            - no duplication 
+            - no indexing
+            - keeps elements in order
+            - slower then hashset
 
         play list -> linkedlist
         undo&redo -> stack
         printing  -> queue
+        
         
      */
 

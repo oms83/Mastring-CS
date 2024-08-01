@@ -14,7 +14,7 @@ namespace Introduction
         {
 
 
-            Collections.Linkedlist_Hashset_SortedSet.Example1.run();
+            Collections.Linkedlist_Hashset_SortedSet.Example2.run();
 
             Console.ReadKey();
         }
