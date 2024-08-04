@@ -53,6 +53,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Humanizer, Version=2.14.0.0, Culture=neutral, PublicKeyToken=979442b78dfc278e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Humanizer.Core.2.14.1\lib\netstandard2.0\Humanizer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -100,6 +103,7 @@
     <Compile Include="Generics\GenericClassConstraint.cs" />
     <Compile Include="Generics\GenericMethod.cs" />
     <Compile Include="Generics\Overloading_intro.cs" />
+    <Compile Include="Nuget Packages and Packaging\Example1.cs" />
     <Compile Include="OOP\clsDate.cs" />
     <Compile Include="OOP\clsEmployee.cs" />
     <Compile Include="OOP\clsIndexers.cs" />
@@ -138,6 +142,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <Compile Include="Stream IO\Example3.cs" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin vs obj.txt" />
