@@ -14,7 +14,7 @@ namespace Introduction
         {
 
 
-            Stream_IO.Example1.run();
+            Stream_IO.Example3.run();
 
             Console.ReadKey();
         }

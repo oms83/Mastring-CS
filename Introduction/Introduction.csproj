@@ -137,9 +137,11 @@
     <EmbeddedResource Include="Assemblies\data.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+    <Compile Include="Stream IO\Example3.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin vs obj.txt" />
+    <Content Include="Stream IO\Text.txt" />
     <Content Include="XML Documentation\Generator.xml" />
   </ItemGroup>
   <ItemGroup>
