@@ -14,7 +14,8 @@ namespace Introduction
         {
 
 
-            Nuget_Packages_and_Packaging.Example1.run();
+            //Nuget_Packages_and_Packaging.Example1.run();
+            
 
             Console.ReadKey();
         }
