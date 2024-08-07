@@ -10,6 +10,7 @@ namespace Introduction.Threading_
 {
     public class Wallet
     {
+        private readonly object _locker = new object();
         public Wallet(string name, decimal bitcoin)
         {
             Name = name;
@@ -25,13 +26,16 @@ namespace Introduction.Threading_
         }
         public void Debit(decimal amount)
         {
-            if ((Bitcoin - amount) > 0)
+            lock (_locker)
             {
-                Bitcoin -= amount;
-            }
-            else
-            {
-                throw new Exception("Your wallet is not enough to withdraw the amount");
+                if ((Bitcoin - amount) > 0)
+                {
+                    Bitcoin -= amount;
+                }
+                else
+                {
+                    throw new Exception("Your wallet is not enough to withdraw the amount");
+                }
             }
         }
         public void RunRandomTransactions()
@@ -62,6 +66,23 @@ namespace Introduction.Threading_
     public class Example1
     {
         public static void run()
+        {
+            Wallet wallet = new Wallet("Omer MEMES", 44);
+
+            Thread t1 = new Thread(()=>wallet.Debit(45));
+            Thread t2 = new Thread(()=>wallet.Credit(50));
+
+            Console.WriteLine(wallet);
+
+            t1.Start();
+            t2.Start();
+
+            t1.Join();  
+            t2.Join();
+
+            Console.WriteLine(wallet);
+        }
+        public static void run2()
         {
             Thread.CurrentThread.Name = "Main Thread";
             Wallet wallet = new Wallet("Omer MEMES", 44);
