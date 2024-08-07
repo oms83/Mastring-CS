@@ -63,9 +63,90 @@ namespace Introduction.Threading_
         }
     }
 
+    public class TransferManager
+    {
+        private Wallet From;
+        private Wallet To;
+        private decimal amountToTransfer;
+        public TransferManager(Wallet from, Wallet to, decimal amountToTransfer)
+        {
+            From = from;
+            To = to;
+            this.amountToTransfer = amountToTransfer;
+        }
+        public void Transfer()
+        {
+            Console.WriteLine($"{Thread.CurrentThread.Name} trying to lock ... {From}");
+            lock (From)
+            {
+                Console.WriteLine($"{Thread.CurrentThread.Name} lock acquired ... {From}");
+                Thread.Sleep(1000);
+
+                Console.WriteLine($"{Thread.CurrentThread.Name} trying to lock ... {To}");
+                //lock (To)
+                //{
+                //    From.Debit(amountToTransfer);
+                //    To.Credit(amountToTransfer);
+                //}
+
+                if (Monitor.TryEnter(To, 1000))
+                {
+                    Console.WriteLine($"{Thread.CurrentThread.Name} lock acquired ... {To}");
+                    try
+                    {
+                        From.Debit(amountToTransfer);
+                        To.Credit(amountToTransfer);
+                    }
+                    catch
+                    {
+
+                    }
+                    finally
+                    {
+                        Monitor.Exit(To);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine($"{Thread.CurrentThread.Name} unable to acquire lock on ... {To}");
+                }
+            }
+        }
+    }
+
     public class Example1
     {
         public static void run()
+        {
+            Wallet wallet1 = new Wallet("Omer MEMES", 44);
+
+            Wallet wallet2 = new Wallet("Ali MEMES", 50);
+            Console.WriteLine("------------------------------");
+            Console.WriteLine($"{wallet1}");
+            Console.WriteLine("------------------------------");
+            Console.WriteLine($"{wallet2}");
+            Console.WriteLine("------------------------------\n\n");
+
+            TransferManager transferManager1 = new TransferManager(wallet1, wallet2, 20);
+            TransferManager transferManager2 = new TransferManager(wallet2, wallet1, 10);
+            transferManager1.Transfer();
+            var t1 = new Thread(transferManager1.Transfer);
+            var t2 = new Thread(transferManager2.Transfer);
+            t1.Name = "T1";
+            t2.Name = "T2";
+            t1.Start();
+            t2.Start();
+            t1.Join();
+            t2.Join();
+
+            Console.WriteLine("------------------------------");
+            Console.WriteLine($"{wallet1}");
+            Console.WriteLine("------------------------------");
+            Console.WriteLine($"{wallet2}");
+            Console.WriteLine("------------------------------");
+
+        }
+        public static void run3()
         {
             Wallet wallet = new Wallet("Omer MEMES", 44);
 
