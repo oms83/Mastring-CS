@@ -133,6 +133,7 @@
     <Compile Include="Stream IO\Example.cs" />
     <Compile Include="Stream IO\Example1.cs" />
     <Compile Include="Struct\clsStruct.cs" />
+    <Compile Include="Threading_\Example1.cs" />
     <Compile Include="Variables\clsVariables.cs" />
     <Compile Include="XML Documentation\Example1.cs" />
   </ItemGroup>
