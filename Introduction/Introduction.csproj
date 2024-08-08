@@ -69,6 +69,7 @@
     <Compile Include="Arrays\clsArrays.cs" />
     <Compile Include="Assemblies\Example1.cs" />
     <Compile Include="Assemblies\Example2.cs" />
+    <Compile Include="Asynchronous Programming\Example1.cs" />
     <Compile Include="Attributes\Error.cs" />
     <Compile Include="Attributes\Example1.cs" />
     <Compile Include="Attributes\Example2.cs" />
