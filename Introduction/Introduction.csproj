@@ -75,6 +75,7 @@
     <Compile Include="Asynchronous Programming\Example4.cs" />
     <Compile Include="Asynchronous Programming\Example5.cs" />
     <Compile Include="Asynchronous Programming\Example6.cs" />
+    <Compile Include="Asynchronous Programming\Example7.cs" />
     <Compile Include="Attributes\Error.cs" />
     <Compile Include="Attributes\Example1.cs" />
     <Compile Include="Attributes\Example2.cs" />

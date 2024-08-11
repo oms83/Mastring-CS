@@ -14,7 +14,7 @@ namespace Introduction
         {
 
 
-            Asynchronous_Programming.Example6.run();
+            Asynchronous_Programming.Example7.run();
 
 
             Console.ReadKey();
