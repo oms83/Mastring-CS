@@ -15,7 +15,7 @@ namespace Introduction
         {
 
 
-            Records.reference_value.run();
+            Records.ExampleHashCode.run();
 
 
             Console.ReadKey();

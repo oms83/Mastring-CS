@@ -142,6 +142,7 @@
     <Compile Include="OOP\Operator Overloading\clsOperatorOverLoading.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Records\ExampleHashCode.cs" />
     <Compile Include="Records\reference_value.cs" />
     <Compile Include="Reflection\ActivatorClass.cs" />
     <Compile Include="Reflection\Example1.cs" />
