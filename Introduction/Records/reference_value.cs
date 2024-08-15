@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Introduction.Records
 {
+    // IEquatable the better usage in the struct
     // reference type (heap)
-    public class clsPoint
+    public class clsPoint : IEquatable<clsPoint>
     {
         public clsPoint(int x, int y)
         {
@@ -17,9 +18,45 @@ namespace Introduction.Records
 
         public int X {  get; set; }
         public int Y { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            clsPoint point = obj as clsPoint;   
+
+            if (point is null)
+            {
+                return false;
+            }
+
+            return (this.X == point.X && this.Y == point.Y);
+        }
+
+        public bool Equals(clsPoint point)
+        {
+            return (this.X == point.X && this.Y == point.Y);
+        }
+
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                int hash = 17;
+                hash = hash * 13 + X.GetHashCode();
+                hash = hash * 13 + Y.GetHashCode();
+
+                return hash;
+            }
+        }
+
+        public override string ToString()
+        {
+            return $"({X},{Y})";
+        }
     }
+
+
     // value type (stack)
-    public struct stPoint
+    public struct stPoint : IEquatable<stPoint>
     {
         public int X;
         public int Y;
@@ -28,6 +65,11 @@ namespace Introduction.Records
         {
             X = x;
             Y = y;
+        }
+
+        public bool Equals(stPoint point)
+        {
+            return (this.X == point.X && this.Y == point.Y);
         }
     }
 
