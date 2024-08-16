@@ -26,7 +26,8 @@ namespace Introduction.Records
         {
             return $"({X}, {Y})";
         }
-    }
+    }  
+
     public class init_readonly
     {
         public static void run()
