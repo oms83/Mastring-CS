@@ -20,6 +20,31 @@ namespace Introduction.Working_with_NULL
             DateTime dateTime = default;
             Console.WriteLine(dateTime);
 
+            int num = default;
+            Console.WriteLine(num); // 0
+
+            Nullable<int> nullable = default;
+            Console.WriteLine(nullable); // empty - null
+
+            Console.WriteLine("---");
+            
+            int? num2 = default;
+            Console.WriteLine(num2); // null
+            if (num2.HasValue)
+            {
+                Console.WriteLine($"num2: {num2}");
+            }
+            else
+            {
+                Console.WriteLine("num2 is null");
+            }
+
+            Console.WriteLine("---");
+
+            Nullable<int> num3 = new Nullable<int>();
+            Console.WriteLine(num3); // null
+            Console.WriteLine("---");
+
         }
 
     }
