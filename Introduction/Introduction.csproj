@@ -156,6 +156,7 @@
     <Compile Include="Struct\clsStruct.cs" />
     <Compile Include="Threading_\Example1.cs" />
     <Compile Include="Variables\clsVariables.cs" />
+    <Compile Include="Working with NULL\ReferencingVSDerefrencing.cs" />
     <Compile Include="XML Documentation\Example1.cs" />
   </ItemGroup>
   <ItemGroup>

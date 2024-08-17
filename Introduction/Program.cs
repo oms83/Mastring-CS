@@ -15,7 +15,7 @@ namespace Introduction
         {
 
 
-            Records.ExampleHashCode.run();
+            Working_with_NULL.ReferencingVSDerefrencing.run();
 
 
             Console.ReadKey();
