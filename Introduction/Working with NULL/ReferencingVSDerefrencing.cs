@@ -43,6 +43,12 @@ namespace Introduction.Working_with_NULL
 
             Nullable<int> num3 = new Nullable<int>();
             Console.WriteLine(num3); // null
+
+            Console.WriteLine("---");
+
+            int ? num4 = default(int?);
+            Console.WriteLine(num4); // null
+            
             Console.WriteLine("---");
 
         }
