@@ -15,7 +15,7 @@ namespace Introduction
         {
 
 
-            Working_with_NULL.ReferencingVSDerefrencing.run();
+            Working_with_NULL.Example1.run();
 
 
             Console.ReadKey();
