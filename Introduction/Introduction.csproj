@@ -153,6 +153,7 @@
     <Compile Include="Serialization\XMLSerialization.cs" />
     <Compile Include="Stream IO\Example.cs" />
     <Compile Include="Stream IO\Example1.cs" />
+    <Compile Include="Strings\Encoding_Unicode.cs" />
     <Compile Include="Struct\clsStruct.cs" />
     <Compile Include="Threading_\Example1.cs" />
     <Compile Include="Variables\clsVariables.cs" />

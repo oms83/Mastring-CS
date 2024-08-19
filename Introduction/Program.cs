@@ -15,7 +15,7 @@ namespace Introduction
         {
 
 
-            Working_with_NULL.Example1.run();
+            Strings.Encoding_Unicode.run();
 
 
             Console.ReadKey();
