@@ -15,7 +15,7 @@ namespace Introduction
         {
 
 
-            Strings.StringLiteral_StringObject.run();
+            Strings.Example.run();
 
 
             Console.ReadKey();
