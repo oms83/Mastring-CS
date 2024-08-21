@@ -155,6 +155,8 @@
     <Compile Include="Serialization\XMLSerialization.cs" />
     <Compile Include="Stream IO\Example.cs" />
     <Compile Include="Stream IO\Example1.cs" />
+    <Compile Include="String Builder\Example.cs" />
+    <Compile Include="String Builder\Example2.cs" />
     <Compile Include="Strings\Encoding_Unicode.cs" />
     <Compile Include="Strings\Example.cs" />
     <Compile Include="Strings\StringLiteral_StringObject.cs" />

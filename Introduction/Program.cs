@@ -15,7 +15,7 @@ namespace Introduction
         {
 
 
-            Strings.Example.run();
+            String_Builder.Example2.run();
 
 
             Console.ReadKey();
